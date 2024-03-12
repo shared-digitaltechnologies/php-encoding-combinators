@@ -1,0 +1,59 @@
+{
+    "name": "shrd/php-encoding-combinators",
+    "version": "0.2.0",
+    "description": "Utilities to encode/decode strings",
+    "license": "propriarty",
+    "keywords": [],
+    "readme": "README.md",
+    "require": {
+        "php": ">= 8.2",
+        "ext-sodium": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "psalm/phar": "^5.20"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "shrd/*": true,
+            "meeva/composer-monorepo-builder-path-plugin": true
+        },
+        "lock": false,
+        "archive-format": "zip",
+        "archive-dir": "../../../dist/composer-archives/php-encoding-combinators",
+        "bin-dir": "../../../vendor/bin",
+        "vendor-dir": "../../../vendor",
+        "use-parent-dir": true,
+        "discard-changes": false
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Shrd\\EncodingCombinators\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shrd\\EncodingCombinators\\Tests\\": "tests/"
+        }
+    },
+    "archive": {
+        "name": "php-coding-utils",
+        "exclude": [
+            "/project.json",
+            "/vendor",
+            "tmp/",
+            "*.log",
+            ".phpunit.cache/",
+            ".phpunit.result.cache",
+            ".DS_Store",
+            ".idea"
+        ]
+    }
+}
