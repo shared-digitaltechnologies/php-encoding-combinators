@@ -2,7 +2,7 @@
     "name": "shrd/php-encoding-combinators",
     "version": "0.2.0",
     "description": "Utilities to encode/decode strings",
-    "license": "propriarty",
+    "license": "proprietary",
     "keywords": [],
     "readme": "README.md",
     "require": {
